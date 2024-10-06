@@ -9,7 +9,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=nianticlabs.com
 // @grant        none
 // @downloadURL https://github.com/ionull/nia/raw/refs/heads/main/review.user.js
-// @updateURL1 https://github.com/ionull/nia/raw/refs/heads/main/review.meta.js
+// @updateURL https://github.com/ionull/nia/raw/refs/heads/main/review.meta.js
 // ==/UserScript==
 
 (function() {
