@@ -63,11 +63,7 @@
     });
 
     const buttons = Array.from(document.querySelectorAll('button[id^="mat-button-toggle-"]'))
-    .filter(button => {
-        const id = button.id;
-        const number = parseInt(id.match(/mat-button-toggle-(\d+)-button/)[1], 10); // Extract the number part
-        return number % 2 !== 0; // Check if the number is odd
-    });
+    .filter((button, index) => index % 2 !== 0); // Filter to get only odd-indexed buttons
     buttons.forEach(
         function(btn) {
             btn.click();
