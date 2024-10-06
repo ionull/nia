@@ -8,8 +8,8 @@
 // @match        https://wayfarer.nianticlabs.com/new/review
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=nianticlabs.com
 // @grant        none
-// @downloadURL https://raw.githubusercontent.com/ionull/nia/refs/heads/master/review.user.js
-// @updateURL1 https://raw.githubusercontent.com/ionull/nia/refs/heads/master/review.meta.js
+// @downloadURL https://github.com/ionull/nia/raw/refs/heads/main/review.user.js
+// @updateURL1 https://github.com/ionull/nia/raw/refs/heads/main/review.meta.js
 // ==/UserScript==
 
 (function() {
@@ -63,7 +63,7 @@
     });
 
     const buttons = Array.from(document.querySelectorAll('button[id^="mat-button-toggle-"]'))
-    .filter((button, index) => index % 2 !== 0); // Filter to get only odd-indexed buttons
+    .filter((button, index) => index % 2 == 0); // Filter to get only odd-indexed buttons
     buttons.forEach(
         function(btn) {
             btn.click();
